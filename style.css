@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/* Estilização do texto (h1, h3, h4, p e etc) */
+h1{
+    text-align: center;
+    font-family: Tahoma;
+    padding-bottom: 10px;
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.6rem;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 5px;
+}
+h4{
+    font-size: 1.6rem;
+    margin: 0;
+    padding-bottom: 5px;
+}
+p{
+    font-family: helvetica, sans-serif;
+    color: #333;
+    padding: 5px 0px 5px;
+    font-size: 1.6rem;
+}
+/* Estilização do Header */
+header{
+    background-color: #000000e1;
+    box-shadow: 0px 5px 15px #000000e1;
+    color: #f6f6f6;
+    text-align: center;
+    font-family: Tahoma;
+    width: 100%;
+    position: fixed;
+}
+/* Estilização do menu do header */
+nav{
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 5px 0 10px;
+    word-spacing: 10px;
+}
+a{
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: all 150ms;
+}
+a:hover{
+    color: #00acb7;
+    text-decoration: underline;
+}
+/* Estilização do corpo */
+body{
+    background-color: #eee;
+}
+#primeiro-container{
+    margin-top: 100px;
+}
+.container{
+    background-color: #f6f6f6;
+    width: 90%;
+    box-shadow: 5px 5px 10px #dddddd;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.botão{
+    margin: 10px 0px;
+}
+.button-test{
+    display: block;
+    font-family: Helvetica;
+    font-size: 1.8rem;
+    /* padding: 0%; */
+    max-width: 160px;
+    max-height: 50px;
+    padding: 15px;
+    background-color: #00acb7;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px #00000050;
+}
+.button-test:hover{
+    color: #fefefe;
+    background-color: #018c96;
+    text-decoration: none;
+    
+}
+/* Grid responsivo adaptado de SCSS */
+.grid{
+    font-family: Tahoma;
+    display:grid;
+    grid-gap: 16px;
+    margin: 10px 0px 0px;
+/*     grid-template-rows: 38vh; */
+    text-align: center;
+}
+@media (min-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+/*       grid-template-rows: 38vh; */
+    }
+}
+@media (min-width: 800px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+/*       grid-template-rows: 38vh; */
+    }
+}
+.col{
+    background-color: #00acb7;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: Tahoma;
+    /* align-items: center;
+    justify-content: center; */
+}
+.image-grid{
+    max-width: 18rem;
+    border-radius: 10px;
+}
+.grid h2{
+    color: #f6f6f6;
+    margin: 5px 5px 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.grid #Curso-1{
+    margin: 5px 0px 15px;
+}
+.texto-grid{
+    color: #f6f6f6;
+    font-size: 1.4rem;
+    margin: 10px 5px 10px;
+    padding: 0px;
+}
+.link-grid{
+    background-color: #f6f6f6;
+    color: #00acb7;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 5px 0px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #00000050;
+}
+.link-grid:hover{
+    background-color: #e4e4e4;
+    text-decoration: none;
+    color: #00acb7;
+}
+/* Sobre mim */
+#Sobre-Mim h2{
+    font-family: Tahoma;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0px;
+}
+#Sobre-Mim #Meu-Nome{
+    font-size: 4rem;
+}
+#Sobre-Mim p{
+    text-align: center;
+    margin: 0 5%;
+}
+.Image-Cropper {
+    width: 20rem;
+    height: 20rem;
+    margin: 15px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 150ms;
+  }
+#Jefferson{
+    height: 40rem;
+    margin-left: -10%;
+    margin-top: -50%;
+}
+.Image-Cropper:hover{
+    border: solid #00acb7;
+    transform: scale(1.1);
+}
+/* Formulário */
+#formulário{
+    background-color: #00acb7;
+    font-family: sans-serif;
+    color: #fefefe;
+    font-size: 1.6rem;
+}
+.formulário-contato{
+    font-family: Tahoma;
+    /* font-weight: Bold; */
+    color: #fefefe;
+}
+input{
+    font-family: Sans-Serif;
+    font-size: 1.8rem;
+    padding: 5px;
+}
+/* Estlização das caixas de input */
+#nome, #tel, #email{
+    font-family: Tahoma;
+    border-radius: 5px;
+    margin: 5px 0 0px;
+    padding: 5px;
+    width: 65%;
+    box-shadow: 0px 0px 5px #00000050;
+}
+/* Estilização das Checkboxes */
+#dg, #logo, #miv, #mg, #vm{
+    margin-top: 10px;
+}
+#enviar-limpar{
+    text-align: center;
+}
+#enviar{
+    color: #00acb7;
+    font-family: Tahoma;
+    border-radius: 5px;
+    width: 100px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 5px #00000050;
+}
+#limpar{
+    color: #333;
+    font-family: Tahoma;
+    border-radius: 5px;
+    width: 100px;
+    box-shadow: 0px 0px 5px #00000050;    
+}
+/* Estilização do footer */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f6f6f6;
+    background-color: #000;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
