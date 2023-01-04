@@ -17,7 +17,7 @@ header{
     text-align: center;
     width: 100%;
     position: fixed;
-    padding: 0 0 10px;
+    padding: 10px 0 10px;
 }
 header h1{
     text-align: center;
@@ -32,7 +32,7 @@ header a{
     font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
-    padding: 0 5px;
+    padding: 10px 5px;
     transition: all 150ms;
 }
 header a:hover{
@@ -43,7 +43,7 @@ header a:hover{
     background-color: #f6f6f6;
     width: 90%;
     padding: 15px;
-    margin: 75px auto 0;
+    margin: 45px auto 0;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #dddddd;
@@ -56,10 +56,20 @@ header a:hover{
     font-weight: bold;
     padding: 0 0 20px;
 }
-#YT{
+.container h2{
+    font-family: Tahoma;
+    font-size: 2rem;
+    text-align: Center;
+    font-weight: bold;
+    padding: 0 0 20px;
+}
+div.YT{
     width: 100%;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
+}
+div.YT > iframe{
+    width: 100%;
 }
 /* Grid */
 .grid{
@@ -89,13 +99,25 @@ header a:hover{
     margin: 0;
 } */
 .chilli{
+    transition: all 150ms;
     grid-area: chilli;
 }
 .revista{
+    transition: all 150ms;
     grid-area: revista;
 }
 .video{
+    transition: all 150ms;
     grid-area: video;
+}
+.chilli:hover{
+    transform: scale(1.1)
+} 
+.video:hover{
+    transform: scale(1.1)
+}
+.revista:hover{
+    transform: scale(1.1)
 }
 /* Footer */
 footer{
