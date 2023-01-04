@@ -2,4 +2,4 @@
 
 Repositório com todo o material do primeiro projeto apresentado no curso da Udemy de HTML e CSS Essencial com alterações que achei pertinentes.
 
->[GitHub Pages](https://jeffersonleitef.github.io/PJ1_Estudo-Udemy_HTML-CSS-Essencial-Jeff/).
+>[GitHub Pages](https://jeffersonleitef.github.io/PJ1_Estudo-Udemy_HTML-CSS-Essencial/).
