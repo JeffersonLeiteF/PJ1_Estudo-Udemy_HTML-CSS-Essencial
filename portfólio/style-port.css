@@ -7,99 +7,113 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-h3{
-    font-size: 2.6rem;
-    margin: 0;
-    padding: 5px 0;
-    text-align: center;
-    margin-bottom: 5px;
-}
-h4{
-    font-size: 1.6rem;
-    margin: 0;
-    padding-bottom: 5px;
+body{
+    background-color: #eee;
 }
 header{
-    background-color: #000000e1;
+    background-color:#000000e1;
     box-shadow: 0px 5px 15px #000000e1;
     color: #f6f6f6;
     text-align: center;
-    font-family: Tahoma;
     width: 100%;
     position: fixed;
+    padding: 0 0 10px;
 }
-/* Estilização do menu do header */
-nav{
+header h1{
     text-align: center;
     font-family: Tahoma;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin: 5px 0 10px;
-    word-spacing: 10px;
+    font-size: 2.5rem;
+    padding: 10px 0 5px;
+    margin: 0 20px;
 }
-a{
-    text-decoration: none;
+header a{
     color: #f6f6f6;
+    font-family: Tahoma;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 5px;
     transition: all 150ms;
 }
-a:hover{
+header a:hover{
     color: #00acb7;
     text-decoration: underline;
-}
-body{
-    background-color: #eee;
 }
 .container{
     background-color: #f6f6f6;
     width: 90%;
-    box-shadow: 5px 5px 10px #dddddd;
     padding: 15px;
     margin: 75px auto 0;
     max-width: 800px;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px #dddddd;
+    text-align: center;
 }
+.container h1{
+    font-family: Tahoma;
+    font-size: 3rem;
+    text-align: Center;
+    font-weight: bold;
+    padding: 0 0 20px;
+}
+#YT{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/* Grid */
 .grid{
-    display:grid;
-    grid-gap: 16px;
-    margin: 0;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    'chilli'
+    'revista'
+    'video';
 }
 @media (min-width: 600px) {
     .grid {
-      grid-template-columns: 1;
-/*       grid-template-rows: 38vh; */
+        grid-template-areas:
+        'chilli chilli chilli video video'
+        'revista revista revista video video';
     }
 }
-@media (min-width: 800px) {
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-/*       grid-template-rows: 38vh; */
-    }
-}
-.bloco{
-    padding: 5px;
-    text-align: center;
-}
-
-.bloco img{
-    max-width: 50rem;
+.grid img{
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
 }
-.bloco iframe{
+/* .grid iframe{
     max-width: 50rem;
     height: 50rem;
+    margin: 0;
+} */
+.chilli{
+    grid-area: chilli;
 }
-/* Estilização do footer */
+.revista{
+    grid-area: revista;
+}
+.video{
+    grid-area: video;
+}
+/* Footer */
 footer{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #f6f6f6;
     background-color: #000;
+    color: #fefefe;
+    padding: 10px 10px 15px;
+    font-family: Tahoma;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    max-width: 100%;
 }
-.contact{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #eee;
-    font-size: 2rem;
-    padding-bottom: 10px;
+footer h3{
+    font-size: 1.8rem;
+}
+footer h4{
+    font-size: 1.6rem;
+    padding: 2px 0 10px;
+}
+footer h6{
+    font-size: 1.2rem;
+    padding-bottom: 2px;
 }
