@@ -1,6 +1,5 @@
-# Estudo-Udemy
+# Primeiro Projeto - Estudo Udemy
 
-Repositório com todo o material/projeto que estou usando e criando para acompanhar o curso da Udemy de HTML e CSS Essencial.
-O doc com as anotações está no [Google Docs](https://docs.google.com/document/d/1HJ3K_43R28zds7dVf1LZM0BdVVdRDwL38e3mYwaEyLY/edit?usp=sharing).
+Repositório com todo o material do primeiro projeto apresentado no curso da Udemy de HTML e CSS Essencial com alterações que achei pertinenes.
 
 >[GitHub Pages](https://jeffersonleitef.github.io/PJ1_Estudo-Udemy_HTML-CSS-Essencial-Jeff/).
