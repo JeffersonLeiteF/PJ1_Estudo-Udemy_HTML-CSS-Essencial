@@ -49,35 +49,44 @@ a:hover{
 body{
     background-color: #eee;
 }
-#primeiro-container{
-    margin-top: 75px;
-}
 .container{
     background-color: #f6f6f6;
     width: 90%;
     box-shadow: 5px 5px 10px #dddddd;
     padding: 15px;
-    margin: 0 auto;
+    margin: 75px auto 0;
     max-width: 800px;
     border-radius: 10px;
 }
-.grid-container{
-    font-family: Tahoma;
-    font-size: 1.8rem;
+.grid{
     display:grid;
     grid-gap: 16px;
-    margin: 10px 0px 0px;
-/*     grid-template-rows: 38vh; */
+    margin: 0;
 }
-/* .conteúdo{
+@media (min-width: 600px) {
+    .grid {
+      grid-template-columns: 1;
+/*       grid-template-rows: 38vh; */
+    }
+}
+@media (min-width: 800px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+/*       grid-template-rows: 38vh; */
+    }
+}
+.bloco{
+    padding: 5px;
     text-align: center;
-} */
-.conteúdo img{
+}
+
+.bloco img{
     max-width: 50rem;
     border-radius: 10px;
 }
-.conteúdo iframe{
+.bloco iframe{
     max-width: 50rem;
+    height: 50rem;
 }
 /* Estilização do footer */
 footer{
